@@ -1,0 +1,11 @@
+.yellow-box {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+.boxes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
