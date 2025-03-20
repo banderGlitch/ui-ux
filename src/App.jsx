@@ -17,7 +17,7 @@ function App() {
     timeline.to('.stagger-box', {
       x: 250,
       rotate: 360,
-      borderRadius: '100%',
+      borderRadius: '20%',
       duration: 1,
       ease: 'back.inOut',
     })
