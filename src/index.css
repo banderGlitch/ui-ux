@@ -13,19 +13,16 @@
   --gray-100: #94928d;
   --gray-200: #afafaf;
   --gray-300: #42424570;
-  --zinc:#101010;
+  --zinc:#645e5e;
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
   color: white;
-  width: 100dvb;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   height: 100%;
   background: #000;
   background-color: var(--zinc);
@@ -35,6 +32,24 @@ body {
   margin-inline-end: auto;
   position: relative;
   max-width: 1120px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: var(--primary-blue);
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@layer utilities {
+  .color-zinc {
+    color: var(--zinc);
+  }
+  .color-blue {
+    color: var(--primary-blue);
+  }
 }
 
 /* 
