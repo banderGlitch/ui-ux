@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 :root {
   /* blue */
   --primary-blue: #2997ff;
@@ -17,8 +16,7 @@
   --zinc:#101010;
 }
 
-
-:root {
+* {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -32,9 +30,14 @@ body {
   background: #000;
   background-color: var(--zinc);
 }
+.screen-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
+}
 
-
-
+/* 
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center
@@ -45,7 +48,7 @@ body {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
+    @apply px-5 py-2 rounded-3xl   bg-[var(--primary-blue)]   my-5 hover:bg-transparent border border-transparent hover:border  hover:text-[var(--primary-blue)]  hover:border-[var(--primary-blue)]
   }
 
   .color-container {
@@ -65,15 +68,15 @@ body {
   }
 
   .section-heading {
-    @apply text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20
+    @apply text-[var(--gray-100)] lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20
   }
 
   .feature-text {
-    @apply text-gray max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
+    @apply text-[var(--gray-100)] max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
   }
 
   .feature-text-container {
-    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-5
+    @apply w-fullflex items-center justify-center flex-col md:flex-row mt-10 md:mt-16 gap-5
   }
 
   .feature-video {
@@ -85,11 +88,11 @@ body {
   }
 
   .link {
-    @apply text-blue hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20
+    @apply text-[var(--primary-blue)] hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20
   }
 
   .control-btn {
-    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center
+    @apply ml-4 p-4 rounded-full bg-[var(--gray-300)] backdrop-blurflex items-center justify-center
   }
 
   .hero-title {
@@ -113,7 +116,7 @@ body {
   }
 
   .hiw-text {
-    @apply text-gray text-xl font-normal md:font-semibold
+    @apply text-[var(--gray-100)] text-xl font-normal md:font-semibold
   }
 
   .hiw-bigtext {
@@ -127,4 +130,4 @@ body {
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
   }
-}
+} */

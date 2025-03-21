@@ -1,11 +1,16 @@
-import './App.css'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
 
-const App = () =>  {
-
-
+const App = () => {
   return (
-    <h1 className='text-4xl font-bold underline'>Hello World</h1>
-  )
-}
+    <main className="bg-black">
+      <Navbar />
+      <Hero />
+      <Highlights />
+    </main>
+  );
+};
 
-export default App
+export default App;
